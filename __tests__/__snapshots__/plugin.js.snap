@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`inline-hash-id basic generate hash: basic generate hash 1`] = `
+"
+__hashId('🌈')
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+'yrcJgmjiVQaO';
+"
+`;
+
+exports[`inline-hash-id inside function: inside function 1`] = `
+"
+document.getElementById(__hashId('root'));
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+document.getElementById('qsmageWVVzIP');
+"
+`;
+
+exports[`inline-hash-id with option: with option 1`] = `
+"
+__hashId('🌈', {uniqPerFile: false})
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+'fZRbeFUKoFBH';
+"
+`;
+
+exports[`inline-hash-id with react #1: with react #1 1`] = `
+"
+React.createElement('div', {
+	id: __hashId('root')
+});
+
+React.createElement('div', {
+	id: __hashId('root', {uniqPerFile: false})
+});
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+React.createElement('div', {
+	id: 'qsmageWVVzIP'
+});
+
+React.createElement('div', {
+	id: 'SBNJTRNFjGow'
+});
+"
+`;
+
+exports[`inline-hash-id with react #2: with react #2 1`] = `
+"
+<body>
+	<div id={__hashId('root')}></div>
+</body>
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+React.createElement(
+	'body',
+	null,
+	React.createElement('div', { id: 'qsmageWVVzIP' })
+);
+"
+`;
