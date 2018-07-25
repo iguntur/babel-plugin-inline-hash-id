@@ -8,7 +8,7 @@ Generate hash ID by given an input.
 ## Install
 
 ```console
-$ npm install babel-plugin-inline-hash-id
+$ npm install --save-dev babel-plugin-inline-hash-id
 ```
 
 
