@@ -5,6 +5,42 @@
 Generate hash ID by given an input.
 
 
+## Install
+
+```console
+$ npm install babel-plugin-inline-hash-id
+```
+
+
+## Setup
+
+### .babelrc
+
+```json
+{
+    "plugins": [
+        "inline-hash-id"
+    ]
+}
+```
+
+#### Default Options
+
+```json
+{
+    "plugins": [
+        ["inline-hash-id", {
+            "fnName": "__hashId",
+            "algorithm": "sha256",
+            "digest": "base64",
+            "maxLength": 12,
+            "uniqPerFile": true
+		}]
+    ]
+}
+```
+
+
 ## Example 1
 
 ### Source
@@ -53,33 +89,6 @@ React.createElement('div', {
 React.createElement('div', {
 	id: 'liLWjkurwUbNyLpxqdzd'
 });
-```
-
-
-## .babelrc
-
-```json
-{
-    "plugins": [
-        "./babel-plugin-inline-hash-id"
-    ]
-}
-```
-
-### Default Options
-
-```json
-{
-    "plugins": [
-        ["./babel-plugin-inline-hash-id", {
-            "fnName": "__hashId",
-            "algorithm": "sha256",
-            "digest": "base64",
-            "maxLength": 12,
-            "uniqPerFile": true
-		}]
-    ]
-}
 ```
 
 
