@@ -1,6 +1,6 @@
 {
 	"name": "babel-plugin-inline-hash-id",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Babel plugin inline function to generate and hash ID",
 	"main": "index.js",
 	"repository": "iguntur/babel-plugin-inline-hash-id",
