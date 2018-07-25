@@ -6,7 +6,7 @@ __hashId('🌈')
 
       ↓ ↓ ↓ ↓ ↓ ↓
 
-'yrcJgmjiVQaO';
+'NIpuVbrbDhKK';
 "
 `;
 
@@ -16,7 +16,7 @@ document.getElementById(__hashId('root'));
 
       ↓ ↓ ↓ ↓ ↓ ↓
 
-document.getElementById('qsmageWVVzIP');
+document.getElementById('PUZbLqOCRmsZ');
 "
 `;
 
@@ -43,7 +43,7 @@ React.createElement('div', {
       ↓ ↓ ↓ ↓ ↓ ↓
 
 React.createElement('div', {
-	id: 'qsmageWVVzIP'
+	id: 'PUZbLqOCRmsZ'
 });
 
 React.createElement('div', {
@@ -63,7 +63,7 @@ exports[`inline-hash-id with react #2: with react #2 1`] = `
 React.createElement(
 	'body',
 	null,
-	React.createElement('div', { id: 'qsmageWVVzIP' })
+	React.createElement('div', { id: 'PUZbLqOCRmsZ' })
 );
 "
 `;
