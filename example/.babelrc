@@ -1,5 +1,12 @@
 {
 	"plugins": [
-		"../lib/hash-id"
+		["../lib/hash-id", {
+			"fnName": "__unique",
+			"uniqPerFile": true
+		}],
+		["../lib/hash-id", {
+			"fnName": "__equal",
+			"uniqPerFile": false
+		}]
 	]
 }

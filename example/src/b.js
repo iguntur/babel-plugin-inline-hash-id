@@ -1,7 +1,7 @@
 React.createElement('div', {
-	id: __hashId('root')
+	id: __unique('root')
 });
 
 React.createElement('div', {
-	id: __hashId('foobarbaz', {uniqPerFile: false})
+	id: __equal('foobarbaz')
 });

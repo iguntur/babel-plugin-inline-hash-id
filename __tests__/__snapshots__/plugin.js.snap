@@ -20,34 +20,16 @@ document.getElementById('PUZbLqOCRmsZ');
 "
 `;
 
-exports[`inline-hash-id with option: with option 1`] = `
-"
-__hashId('🌈', {uniqPerFile: false})
-
-      ↓ ↓ ↓ ↓ ↓ ↓
-
-'fZRbeFUKoFBH';
-"
-`;
-
 exports[`inline-hash-id with react #1: with react #1 1`] = `
 "
 React.createElement('div', {
 	id: __hashId('root')
 });
 
-React.createElement('div', {
-	id: __hashId('root', {uniqPerFile: false})
-});
-
       ↓ ↓ ↓ ↓ ↓ ↓
 
 React.createElement('div', {
 	id: 'PUZbLqOCRmsZ'
-});
-
-React.createElement('div', {
-	id: 'SBNJTRNFjGow'
 });
 "
 `;

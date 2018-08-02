@@ -41,17 +41,13 @@ $ npm install --save-dev babel-plugin-inline-hash-id
 ```
 
 
-## Example 1
+## Example
 
 ### Source
 
 ```js
 React.createElement('div', {
 	id: __hashId('root')
-});
-
-React.createElement('div', {
-	id: __hashId('foobarbaz', {uniqPerFile: false, maxLength: 20})
 });
 ```
 
@@ -61,35 +57,9 @@ React.createElement('div', {
 React.createElement('div', {
 	id: 'BkbudHtGGjOI'
 });
-React.createElement('div', {
-	id: 'liLWjkurwUbNyLpxqdzd'
-});
 ```
 
-## Example 2
-
-### Source
-
-```js
-React.createElement('div', {
-	id: __hashId('root')
-});
-
-React.createElement('div', {
-	id: __hashId('foobarbaz', {uniqPerFile: false, maxLength: 20})
-});
-```
-
-### Output
-
-```js
-React.createElement('div', {
-	id: 'eWVgAjHFWjcZ'
-});
-React.createElement('div', {
-	id: 'liLWjkurwUbNyLpxqdzd'
-});
-```
+See the `example` for more details.
 
 
 ## License

@@ -6,9 +6,7 @@ pluginTester({
 	plugin,
 	pluginName: 'inline-hash-id',
 	babelOptions: {
-		presets: [
-			'react'
-		]
+		presets: ['react']
 	},
 	tests: [
 		{
@@ -17,19 +15,10 @@ pluginTester({
 			snapshot: true
 		},
 		{
-			title: 'with option',
-			code: `__hashId('🌈', {uniqPerFile: false})`,
-			snapshot: true
-		},
-		{
 			title: 'with react #1',
 			code: `
 				React.createElement('div', {
 					id: __hashId('root')
-				});
-
-				React.createElement('div', {
-					id: __hashId('root', {uniqPerFile: false})
 				});
 			`,
 			snapshot: true
