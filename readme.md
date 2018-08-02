@@ -35,7 +35,7 @@ $ npm install --save-dev babel-plugin-inline-hash-id
             "digest": "base64",
             "maxLength": 12,
             "uniqPerFile": true
-		}]
+        }]
     ]
 }
 ```
@@ -47,7 +47,7 @@ $ npm install --save-dev babel-plugin-inline-hash-id
 
 ```js
 React.createElement('div', {
-	id: __hashId('root')
+    id: __hashId('root')
 });
 ```
 
@@ -55,7 +55,7 @@ React.createElement('div', {
 
 ```js
 React.createElement('div', {
-	id: 'BkbudHtGGjOI'
+    id: 'BkbudHtGGjOI'
 });
 ```
 
